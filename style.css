@@ -18,16 +18,13 @@ body {
     background-color: black;   
 }
 
-header ul {
+nav ul {
     font-family: fantasy;
     color: blueviolet;
-    margin-bottom: 20px;
-}
-
-nav ul {
     display: flex; 
     justify-content: center;
     margin-top: 40px;
+    margin-bottom: 20px;
     text-decoration: none;
 }
 
@@ -39,12 +36,9 @@ nav ul li {
     text-decoration: none;
 }
 
-section {
+section .homescreen-image {
     display: flex;
     justify-content: center;
-}
-
-.homescreen-image {
     width: 500px;
     margin: 30px;
 }
