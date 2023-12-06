@@ -26,6 +26,7 @@ a {
 .button:active{
     background-color: yellow;
     color: blueviolet;
+    font-weight: 300;
 }
 a:hover {
     color: yellow;
