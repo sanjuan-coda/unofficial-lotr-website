@@ -3,7 +3,7 @@
 h1 {
     padding: 20px;
     margin-top: 10px;
-    font-size: 50px;
+    font-size: 3em;
     font-weight: 40;
     text-align: center;
 }
@@ -14,9 +14,7 @@ h2{
 a {
     color: blueviolet;
 }
-.active {
-    color: yellow;
-}
+
 .button:hover {
     font-size: 1em;
     padding: 0.1em;
@@ -32,6 +30,10 @@ a:hover {
     color: yellow;
     transition: all 250ms ease-in;
 }
+a:focus{
+    background-color: yellow;
+    color: blueviolet;
+}
 
 body {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -40,7 +42,10 @@ body {
 }
 
 ul {
-    font-size: 30px;
+    font-size: 2em;
+}
+.active {
+    color: yellow;
 }
 nav ul {
     font-family: fantasy;
@@ -54,13 +59,26 @@ nav ul {
     border-radius: 15px;
 }
 nav ul li {
+    display: flex; 
     font-size: 35px;
-    margin-right: 2em;
+    margin-right: 1.5em;
     text-align: center;
-    justify-content: center;
+    justify-content: space-between;
     text-decoration: none;
     border-color:blueviolet;
     border-radius: 15px;
+}
+
+div .character{
+    padding: 3em;
+    justify-content: left;
+    max-width: 80%;
+}
+div {
+    border: solid;
+    border-color: blueviolet;
+    padding: 1em;
+    max-width: 55%;
 }
 
 section .homescreen-image {
