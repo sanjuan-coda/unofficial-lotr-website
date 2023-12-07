@@ -10,6 +10,9 @@ h1 {
 h2{
     text-align: center;
 }
+h3{
+    font-size: 2em;
+}
 
 a {
     color: blueviolet;
@@ -38,11 +41,12 @@ a:focus{
 body {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: yellow;
-    background-color: black;   
+    background-color: black; 
 }
 
 ul {
     font-size: 2em;
+    display: flex;
 }
 .active {
     color: yellow;
@@ -71,7 +75,7 @@ nav ul li {
 
 div .character{
     padding: 3em;
-    justify-content: left;
+    justify-content: center;
     max-width: 80%;
 }
 div {
@@ -79,13 +83,28 @@ div {
     border-color: blueviolet;
     padding: 1em;
     max-width: 55%;
+    justify-content: center;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    background-color:;
+}
+div .merch {
+    justify-content: center;
+    display: flex;
+    min-width: 50%;
+    max-width: 100%;
+    max-height: 10%;
+    text-align: right;
 }
 
-section .homescreen-image {
-    display: flex;
+.merch{
     justify-content: center;
-    width: 500px;
-    margin: 30px;
+    display: flex;
+    min-width: 50%;
+    max-width: 100%;  
+    margin-right: 40%; 
+    padding-right: 3em;
+    overflow-wrap: normal;
 }
 
 footer p {
