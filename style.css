@@ -67,16 +67,29 @@ nav ul li {
     border-radius: 15px;
 }
 
+.image{
+    display: flex;
+    margin-bottom: 2em;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
 section {
     display: flex;
     margin-bottom: 5em;
     max-width: 100%;
+    flex-direction: column;
 }
 section :first-child { /* selecteerd link/button */
-    
+   margin-bottom: 2em;
+   margin-left: 1.5em;
+}
+section :nth-child(2) { /* selecteerd image */
+    display: flex;
 }
 section :nth-child(3) { /* selecteerd text */
-    background-color: lawngreen;
+    font-size: 21px;
+    display: flex;
 }
 
 footer p {
