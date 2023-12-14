@@ -15,32 +15,32 @@ h3{
 }
 
 a {
-    color: blueviolet;
+    color: crimson;
 }
 
 .button:hover {
     font-size: 1em;
     padding: 0.1em;
-    border: 2px solid blueviolet;
+    border: 2px solid crimson;
     position: sticky;
 }
 .button:active{
-    background-color: yellow;
-    color: blueviolet;
+    background-color: gold;
+    color: crimson;
     font-weight: 300;
 }
 a:hover {
-    color: yellow;
+    color: gold;
     transition: all 250ms ease-in;
 }
 a:focus{
-    background-color: yellow;
-    color: blueviolet;
+    background-color: gold;
+    color: crimson;
 }
 
 body {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: yellow;
+    color: gold;
     background-color: black; 
 }
 
@@ -49,29 +49,32 @@ ul {
     display: flex;
 }
 .active {
-    color: yellow;
+    color: gold;
 }
 nav ul {
     justify-content: center;
 }
 nav ul li {
     font-family: fantasy;
-    color: blueviolet;
+    color: crimson;
     display: flex; 
     font-size: 1em;
     margin-right: 1.5em;
     margin-top: 40px;
     margin-bottom: 20px;
     text-decoration: none;
-    border-color:blueviolet;
+    border-color:crimson;
     border-radius: 15px;
 }
 
 .image{
     display: flex;
-    margin-bottom: 2em;
-    max-width: 100%;
+    flex-direction: row;
     flex-wrap: wrap;
+    width: 768px;
+}
+.homescreen{
+    justify-content: center;
 }
 
 section {
@@ -81,10 +84,9 @@ section {
     flex-direction: column;
 }
 section :first-child { /* selecteerd link/button */
-   margin-bottom: 2em;
-   margin-left: 1.5em;
+
 }
-section :nth-child(2) { /* selecteerd image */
+section :nth-child() { /* selecteerd image */
     display: flex;
 }
 section :nth-child(3) { /* selecteerd text */
