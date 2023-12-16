@@ -68,11 +68,11 @@ nav ul li {
 }
 
 .image{
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 768px;
+    @media only screen and (max-width: 600px) /* De @media code gevonden dankzij W3schools (vraag hiernaar tijdens mondeling :) ) */
 }
+
 .homescreen{
     justify-content: center;
 }
@@ -83,19 +83,24 @@ section {
     max-width: 100%;
     flex-direction: column;
 }
-section :first-child { /* selecteerd link/button */
-
-}
-section :nth-child() { /* selecteerd image */
+section :first-child{
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; 
 }
-section :nth-child(3) { /* selecteerd text */
+section :nth-child(2) {
     font-size: 21px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+section :nth-child(3) {
     display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    flex-direction: column;
 }
 
 footer p {
     justify-content: center;
     text-align: center;
 }
-
