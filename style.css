@@ -14,36 +14,6 @@ h3{
     font-size: 2em;
 }
 
-a {
-    color: crimson;
-}
-
-.button:hover {
-    font-size: 1em;
-    padding: 0.1em;
-    border: 2px solid crimson;
-    position: sticky;
-}
-.button:active{
-    background-color: gold;
-    color: crimson;
-    font-weight: 300;
-}
-a:hover {
-    color: gold;
-    transition: all 250ms ease-in;
-}
-a:focus{
-    background-color: gold;
-    color: crimson;
-}
-
-body {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: gold;
-    background-color: black; 
-}
-
 ul {
     font-size: 2em;
     display: flex;
@@ -60,20 +30,60 @@ nav ul li {
     display: flex; 
     font-size: 1em;
     margin-right: 1.5em;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
     text-decoration: none;
     border-color:crimson;
     border-radius: 15px;
 }
 
+a {
+    color: crimson;
+    text-decoration: none;
+}
+a:hover {
+    color: gold;
+    transition: all 250ms ease-in;
+    text-decoration: underline;
+}
+a:focus{
+    background-color: gold;
+    color: crimson;
+}
+
+.button{
+    padding-left: 1em;
+    padding-bottom: 0.5em;
+}
+.button:hover {
+    font-size: 3em;
+    padding: 0.1em;
+    border: 10px solid crimson;
+    position: sticky;
+}
+.button:active{
+    background-color: gold;
+    color: crimson;
+    font-weight: 300;
+}
+
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: gold;
+    background-color: black; 
+}
+
 .image{
     flex-direction: row;
+    padding: 2em;
     flex-wrap: wrap;
     @media only screen and (max-width: 600px) /* De @media code gevonden dankzij W3schools (vraag hiernaar tijdens mondeling :) ) */
 }
 
-.homescreen{
+.homescreenimage{
+    width: 700px;
+    display: ;
+    padding-left: 333px;
     justify-content: center;
 }
 
@@ -85,7 +95,6 @@ section {
 }
 section :first-child{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column; 
 }
 section :nth-child(2) {
@@ -98,6 +107,7 @@ section :nth-child(3) {
     flex-wrap: wrap;
     max-width: 100%;
     flex-direction: column;
+    font-size: 25px;
 }
 
 footer p {
